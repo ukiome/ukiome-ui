@@ -1,6 +1,6 @@
 {
   "name": "@ukiome/ukiome-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -15,7 +15,6 @@
     "build": "tsc && vite build",
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
-    "prepare": "npm run build",
     "test": "vitest run",
     "test-watch": "vitest",
     "test:ui": "vitest --ui",
@@ -23,13 +22,6 @@
     "build-storybook": "storybook build"
   },
   "keywords": [],
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "npm run format",
-      "npm run lint",
-      "npm run test"
-    ]
-  },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.25",
     "@storybook/addon-essentials": "^8.0.5",
@@ -51,9 +43,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.8.0",
-    "husky": "^9.0.11",
     "jsdom": "^24.0.0",
-    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "storybook": "^8.0.5",
     "styled-components": "^6.1.8",
