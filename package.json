@@ -1,6 +1,6 @@
 {
-  "name": "@ukiome/ukiome-ui",
-  "version": "1.0.2",
+  "name": "ukiome-ui",
+  "version": "1.0.3",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -54,8 +54,5 @@
   },
   "peerDependencies": {
     "react": "^18.2.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ukiome"
   }
 }
